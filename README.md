@@ -36,21 +36,21 @@ Raw data files are not included in this repo (size and licensing). See "Getting 
 - `route_stops(seg_id, seq, stop_id)`
 - `transfers(from_stop, to_stop, walk_m)`
 
-## How to run
+<!-- ## How to run
 
 ```bash
 python -m pip install numpy scipy pandas
 python build_db.py     # builds bus_subgraph.db from the data files   [rename to yours]
 python search.py       # runs example journeys                         [rename to yours]
-```
+``` -->
 
 ## Search
 
 Dijkstra on an in-memory graph loaded from SQLite. Edge cost in v1 is a placeholder: a small cost per ride hop, a larger boarding penalty, and walking time from distance. These are **not real timings**.
 
-## Results
+<!-- ## Results
 
-[Fill in: 3 to 5 example journeys, bus-only vs multi-modal, with legs and query time.]
+[Fill in: 3 to 5 example journeys, bus-only vs multi-modal, with legs and query time.] -->
 
 ## Limitations
 
