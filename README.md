@@ -50,9 +50,33 @@ python -m uvicorn api:app --reload #final interface
 
 Dijkstra on an in-memory graph loaded from SQLite. Edge cost in v1 is a placeholder: a small cost per ride hop, a larger boarding penalty, and walking time from distance. These are **not real timings**.
 
-<!-- ## Results
+## Results
 
-[Fill in: 3 to 5 example journeys, bus-only vs multi-modal, with legs and query time.] -->
+=== Khar Road (train) -> Chembur (train) ===
+ option 1:
+  cost 57
+    train WR: Khar Road (train) -> Bandra (train)
+    walk 175 m: Bandra (train) -> Bandra (W) Bus Station
+    bus 375 AS: Bandra (W) Bus Station -> Dr.Ambedkar Udyan; ChemburStation
+    walk 76 m: Dr.Ambedkar Udyan; Chembur Station -> Chembur (train)
+ option 2:
+  cost 65
+    train WR: Khar Road (train) -> Andheri (train)
+    interchange in-station: Andheri (train) -> Andheri (metro)
+    metro Line 1: Andheri (metro) -> Ghatkopar (metro)
+    walk 9 m: Ghatkopar (metro) -> Ghatkopar (train)
+    train CR: Ghatkopar (train) -> Kurla (train)
+    train HR: Kurla (train) -> Chembur (train)
+ option 3:
+  cost 69
+    walk 295 m: Khar Road (train) -> Khar Station (W) Road 
+    bus 473 AS: Khar Station (W) Road  -> Priyadarshini (Chunabhatti)
+    walk 12 m: Priyadarshini (Chunabhatti) -> Priyadarshini (Chunabhatti)
+    bus 491 AS: Priyadarshini (Chunabhatti) -> Amar Mahal
+    walk 418 m: Amar Mahal -> Chembur (train)
+
+
+
 
 ## Limitations
 
