@@ -36,13 +36,15 @@ Raw data files are not included in this repo (size and licensing). See "Getting 
 - `route_stops(seg_id, seq, stop_id)`
 - `transfers(from_stop, to_stop, walk_m)`
 
-<!-- ## How to run
+## How to run
 
 ```bash
 python -m pip install numpy scipy pandas
-python build_db.py     # builds bus_subgraph.db from the data files   [rename to yours]
-python search.py       # runs example journeys                         [rename to yours]
-``` -->
+python build_db.py     # builds bus_subgraph.db from the data files   
+python search.py       # runs example journeys                         
+python -m pip install fastapi uvicorn 
+python -m uvicorn api:app --reload #final interface
+```
 
 ## Search
 
